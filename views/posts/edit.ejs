@@ -1,0 +1,9 @@
+<h3>¡Edita tu post!</h3>
+<h1><%= post.title %></h1>
+<section>
+  <p><%= post.body %></p>
+</section>
+
+<form method="post" enctype="multipart/form-data" action="/posts/<%= post.id %>?_method=PUT">
+  <%- include('_form') %>
+</form>

@@ -1,0 +1,6 @@
+<% if (mime === "image/jpeg" || mime === "image/gif" || mime === "image/jpg" ||
+       mime === "image/png" || mime === "image/gif" ) { %>
+    <img class="attachment" src="<%= imageUrl %>" alt="Image" width="400px"/>
+<% } else { %>
+    <img class="attachment" src="../../images/none.jpg" width="200px" />
+<% } %>

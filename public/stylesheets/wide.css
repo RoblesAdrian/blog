@@ -1,0 +1,18 @@
+#page:after {
+    color: white;
+    content: "Wide Layout";
+}
+
+#mainNav {
+    flex: 0 auto;
+}
+
+#mainNav a {
+    display:inline;
+    text-align: left;
+}
+
+#mainSection {
+    flex: 1;
+    overflow: auto;
+}
