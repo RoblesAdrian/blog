@@ -2,6 +2,8 @@ var createError = require('http-errors');
 var express = require('express');
 var methodOverride = require('method-override');
 
+// const https = require('https');
+
 var partials = require('express-partials');
 
 var path = require('path');
@@ -15,6 +17,15 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
+/*
+app.use((req, res, next) => {
+  if (!req.secure) {
+    return res.redirect('https://' + req.headers.host + req.url);
+  }
+  next();
+});
+*/
 
 app.use(logger('dev'));
 app.use(express.json());
